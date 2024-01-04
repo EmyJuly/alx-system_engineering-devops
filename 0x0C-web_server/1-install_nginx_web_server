@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#Install nginx web server with redirect and 404 page
+#Install nginx web server
 sudo apt-get update
 sudo apt-get install nginx -y
 echo "server {
@@ -12,5 +12,5 @@ echo "server {
         try_files $uri $uri/ =404;
     }
 }" > /etc/nginx/sites-available/default
-echo 'Hello World!' | sudo tee /var/www/html/index.html
+sudo echo 'Hello World!' | sudo tee /var/www/html/index.html
 sudo service nginx restart
