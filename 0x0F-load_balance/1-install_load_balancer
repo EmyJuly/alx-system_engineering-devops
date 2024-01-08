@@ -13,7 +13,7 @@ frontend emyjuly.tech
 
 backend web_servers
         balance roundrobin
-        server 431493-web-01 54.237.207.13:80
+        server 431493-web-01 100.25.119.137:80
         server 431493-web-02 54.84.219.23:80
 ' >> /etc/haproxy/haproxy.cfg
 
